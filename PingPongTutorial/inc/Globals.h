@@ -3,7 +3,7 @@
 #ifndef _GLOBALS_H_
 #define _GLOBALS_H_
 
-#include "ui/Application.h"
+class Application;
 
 Application* GetApplication();
 

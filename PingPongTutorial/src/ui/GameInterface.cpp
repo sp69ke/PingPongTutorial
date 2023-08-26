@@ -1,6 +1,7 @@
 #include "../../inc/ui/Interface.h"
 #include "../../inc/Message.h"
 #include "../../inc/Globals.h"
+#include "../../inc/ui/Application.h"
 
 GameInterface::GameInterface() : Interface(L"Game") {}
 

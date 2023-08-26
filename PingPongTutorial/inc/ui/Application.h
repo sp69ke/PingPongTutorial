@@ -5,7 +5,7 @@
 #include<string>
 #include<unordered_map>
 
-#include "Interface.h"
+class Interface;
 
 class Application final
 {

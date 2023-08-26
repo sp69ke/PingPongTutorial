@@ -1,5 +1,6 @@
 #include "../../inc/ui/Interface.h"
 #include "../../inc/Globals.h"
+#include "../../inc/ui/Application.h"
 
 MainInterface::MainInterface()
 	: Interface(L"Main")

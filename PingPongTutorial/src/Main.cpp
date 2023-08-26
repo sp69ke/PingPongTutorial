@@ -3,6 +3,7 @@
 #include "../inc/Message.h"
 #include "../inc/Globals.h"
 #include "../inc/ui/Application.h"
+#include "../inc/ui/Interface.h"
 
 void Init();
 int APIENTRY WinMain(
