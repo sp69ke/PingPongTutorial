@@ -1,4 +1,5 @@
 #include "../../inc/ui/Interface.h"
+#include "../../inc/Globals.h"
 
 MainInterface::MainInterface()
 	: Interface(L"Main")
@@ -39,6 +40,17 @@ void MainInterface::Draw()
 	_pTwoPlayerButton->Draw();
 	_pExitButton->Draw();
 }
-void MainInterface::_OnClickOnePlayerButton() {}
-void MainInterface::_OnClickTwoPlayerButton() {}
-void MainInterface::_OnClickExitButton() {}
+void MainInterface::_OnClickOnePlayerButton() 
+{
+	Application* app = GetApplication();
+	app->ChangeInterface(L"Game");
+}
+void MainInterface::_OnClickTwoPlayerButton()
+{
+	Application* app = GetApplication();
+	app->ChangeInterface(L"Game");
+}
+void MainInterface::_OnClickExitButton() 
+{
+	isRunning = false;
+}

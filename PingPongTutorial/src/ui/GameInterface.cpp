@@ -1,4 +1,6 @@
 #include "../../inc/ui/Interface.h"
+#include "../../inc/Message.h"
+#include "../../inc/Globals.h"
 
 GameInterface::GameInterface() : Interface(L"Game") {}
 
@@ -8,7 +10,13 @@ void GameInterface::OnEnter() {}
 
 void GameInterface::OnExit() {}
 
-void GameInterface::Update() {}
+void GameInterface::Update()
+{
+	if (IsKeyDown(VK_ESCAPE))
+	{
+		GetApplication()->ChangeInterface(L"Main");
+	}
+}
 
 void GameInterface::Draw() 
 {

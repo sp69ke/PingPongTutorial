@@ -3,7 +3,9 @@
 #ifndef _GLOBALS_H_
 #define _GLOBALS_H_
 
-class Application;
+#include "ui/Application.h"
+
 Application* GetApplication();
 
+extern bool isRunning;
 #endif
