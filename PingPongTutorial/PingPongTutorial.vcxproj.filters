@@ -4,10 +4,17 @@
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Message.cpp" />
     <ClCompile Include="src\ui\Button.cpp" />
+    <ClCompile Include="src\ui\MainInterface.cpp" />
+    <ClCompile Include="src\ui\GameInterface.cpp" />
+    <ClCompile Include="src\ui\Application.cpp" />
+    <ClCompile Include="src\Globals.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\Defines.h" />
     <ClInclude Include="inc\Message.h" />
     <ClInclude Include="inc\ui\Button.h" />
+    <ClInclude Include="inc\ui\Interface.h" />
+    <ClInclude Include="inc\ui\Application.h" />
+    <ClInclude Include="inc\Globals.h" />
   </ItemGroup>
 </Project>

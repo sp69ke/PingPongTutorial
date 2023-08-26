@@ -19,12 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Globals.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Message.cpp" />
+    <ClCompile Include="src\ui\Application.cpp" />
     <ClCompile Include="src\ui\Button.cpp" />
+    <ClCompile Include="src\ui\GameInterface.cpp" />
+    <ClCompile Include="src\ui\MainInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\Defines.h" />
+    <ClInclude Include="inc\Globals.h" />
+    <ClInclude Include="inc\ui\Application.h" />
+    <ClInclude Include="inc\ui\Interface.h" />
     <ClInclude Include="inc\Message.h" />
     <ClInclude Include="inc\ui\Button.h" />
   </ItemGroup>
@@ -118,6 +125,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
