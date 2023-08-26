@@ -18,7 +18,7 @@ void PeekInputMessage()
 }
 bool IsKeyDown(int key)
 {
-	return (GetAsyncKeyState(key) & 0x8000);
+	return (GetAsyncKeyState(key));
 }
 Coordinate GetMouseCoordinate()
 {
