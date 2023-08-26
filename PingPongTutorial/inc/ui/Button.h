@@ -18,13 +18,15 @@ class Button
 {
 private:
 	Rect _range;
+
+	ButtonState _state;
 	COLORREF _color[BUTTON_STATE_NUM];
 	std::wstring _text;
 
 	void (*_onClick)(void);
 
 public:
-	Button(Rect& range, const std::wstring& text);
+	Button(const Rect& range, const std::wstring& text);
 
 	Button* SetUpStyle(COLORREF color);
 	Button* SetHoverStyle(COLORREF color);

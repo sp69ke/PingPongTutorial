@@ -3,6 +3,7 @@
 #ifndef _DEFINES_H_
 #define _DEFINES_H_ 
 
+#include <easyx.h>
 struct Vector
 {
 	double x;
@@ -89,7 +90,10 @@ struct Rect
 		return ((x < coord.x && coord.x < x + width) && (y < coord.y && coord.y < y + height));
 	}
 
-
+	RECT ToEasyXRECT() const
+	{
+		return { (LONG)x, (LONG)y, (LONG)(x + width),(LONG)(y + height) };
+	}
 };
 #endif
 
