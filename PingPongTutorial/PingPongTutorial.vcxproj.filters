@@ -2,8 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Message.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\Defines.h" />
+    <ClInclude Include="inc\Message.h" />
   </ItemGroup>
 </Project>
