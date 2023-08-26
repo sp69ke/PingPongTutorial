@@ -25,6 +25,7 @@
   <ItemGroup>
     <ClInclude Include="inc\Defines.h" />
     <ClInclude Include="inc\Message.h" />
+    <ClInclude Include="inc\ui\Button.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

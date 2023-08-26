@@ -59,7 +59,7 @@ struct Vector
 
 using Coordinate = Vector;
 
-struct Rectangle
+struct Rect
 {
 	union
 	{
@@ -69,8 +69,8 @@ struct Rectangle
 	double width;
 	double height;
 
-	Rectangle() : x(0), y(0), width(0), height(0) {};
-	Rectangle(double _x, double _y, double _width, double _height) : x(_x), y(_y), width(_width), height(_height) {};
+	Rect() : x(0), y(0), width(0), height(0) {};
+	Rect(double _x, double _y, double _width, double _height) : x(_x), y(_y), width(_width), height(_height) {};
 
 
 
@@ -79,7 +79,7 @@ struct Rectangle
 		return { x + width * 0.5, y + height * 0.5 };
 	}
 
-	Coordinate Intersect(const Rectangle* rect) const
+	Coordinate Intersect(const Rect* rect) const
 	{
 		return Coordinate();
 	}

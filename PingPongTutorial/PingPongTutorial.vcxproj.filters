@@ -7,5 +7,6 @@
   <ItemGroup>
     <ClInclude Include="inc\Defines.h" />
     <ClInclude Include="inc\Message.h" />
+    <ClInclude Include="inc\ui\Button.h" />
   </ItemGroup>
 </Project>
